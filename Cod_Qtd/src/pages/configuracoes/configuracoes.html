@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Configurações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label fixed>Delimitador</ion-label>
+    <ion-input type="text" value=""></ion-input>
+  </ion-item>
+
+  <ion-item >
+    <ion-label>Incluir Data e Hora</ion-label>
+    <ion-checkbox checked="false" [(ngModel)]="status" ></ion-checkbox>  
+  </ion-item>
+
+  <button ion-button block light (click)="radioOption()" [disabled]="!status" >{{ rdButtonResult }}</button>
+
+  <ion-item>
+    <ion-label>Habilita quantidade manual</ion-label>
+    <ion-checkbox checked="false"></ion-checkbox>
+  </ion-item>
+
+  <button ion-button>OK</button>
+  <button ion-button color="danger">Cancelar</button>
+  
+</ion-content>

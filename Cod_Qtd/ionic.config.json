@@ -1,0 +1,8 @@
+{
+  "name": "Cod_Qtd",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
